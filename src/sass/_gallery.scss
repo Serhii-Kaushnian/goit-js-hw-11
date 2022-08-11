@@ -1,0 +1,68 @@
+// =================================================
+// =================================================
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: -5px;
+}
+.photo-card_link {
+  display: flex;
+  color: inherit;
+  // width: 258px;
+  flex-basis: calc((100% - 8 * 5px) / 4);
+  margin: 5px;
+}
+
+.photo-thumb {
+}
+
+.photo-card {
+  position: relative;
+  padding: 5px;
+  width: 100%;
+  padding-bottom: 35px;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 19px -1px #000000;
+  box-shadow: 5px 5px 19px -1px #000000;
+  transition: background-color 1000ms, transform 500ms ease;
+  & img {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: block;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+  &:hover {
+    background-color: rgb(113, 255, 236);
+    transform: rotate(-1deg) scale(1.01);
+  }
+}
+.info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: calc((100% - 10px) / 1);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5px;
+}
+.info-item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 10px;
+  &:not(:last-child) {
+    margin-right: 5px;
+  }
+  & > span {
+    margin-top: 5px;
+  }
+}
