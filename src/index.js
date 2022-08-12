@@ -16,7 +16,7 @@ const refs = {
 // ====================================================================================
 const API_KEY = '8185021-24268e96be1b2c00462570825';
 const MAIN_URL = 'https://pixabay.com/api/';
-let perPage = 40;
+let perPage = 39;
 let totalHitsOfResponse;
 let totalPageOfResponse;
 let page = 1;
